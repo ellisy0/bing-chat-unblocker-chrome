@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Bing Chat Unblocker",
+    "version": "0.1",
+    "permissions": [
+      "declarativeNetRequestWithHostAccess"
+    ],
+    "host_permissions": [
+      "*://*.bing.com/*"
+    ],
+    "declarative_net_request": {
+      "rule_resources": [
+        {
+          "id": "ruleset_1",
+          "enabled": true,
+          "path": "rules.json"
+        }
+      ]
+    }
+}
